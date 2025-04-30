@@ -4,8 +4,7 @@
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    gap: 64px;
-    @include flexer(center, center, column);
+    @include flexer($g :64px);
 
     #logo {
         max-width: 420px;
@@ -14,8 +13,7 @@
     }
 
     .button-menu {
-        @include flexer(center, center, column);
-        gap: 24px;
+        @include flexer($g :24px);
     }
 }
 
