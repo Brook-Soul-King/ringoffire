@@ -1,0 +1,40 @@
+.start-screen {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 64px;
+
+    #logo {
+        max-width: 420px;
+        width: 100%;
+        height: auto;
+    }
+
+    .button-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+button {
+    min-width: 164px;
+    font-family: "Jacquard";
+    font-size: 32px;
+    color: #DF0000;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px 16px;
+
+    &:hover {
+        background-color: #f0f0f0;
+        cursor: pointer;
+    }
+}
