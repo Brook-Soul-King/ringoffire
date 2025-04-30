@@ -2,10 +2,6 @@
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: 64px;
 
     #logo {
@@ -15,10 +11,6 @@
     }
 
     .button-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         gap: 24px;
     }
 }
