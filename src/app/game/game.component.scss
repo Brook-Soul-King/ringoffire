@@ -25,9 +25,14 @@
     }
 }
 
+.played-card {
+    right: -140px;
+    transform: scale(1) translateX(140px) translateY(-180px) rotate(-10deg);
+}
+
 .pick-card {
     animation: pick-card-amimation 1s ease-in-out;
-    transform: scale(1.2) translateX(140px) translateY(-180px) rotate(-10deg);
+    transform: scale(1) translateX(140px) translateY(-180px) rotate(-10deg);
 }
 
 @keyframes pick-card-amimation {
@@ -41,6 +46,11 @@
         transform: scale(1.7);
     }
     100% {
-        transform: scale(1.2) translateX(140px) translateY(-180px) rotate(-10deg);
+        transform: scale(1) translateX(140px) translateY(-180px) rotate(-10deg);
     }
+}
+
+.player-position {
+    position: absolute;
+    right: 0;
 }
