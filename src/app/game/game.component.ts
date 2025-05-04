@@ -11,6 +11,7 @@ import { Game } from '../../models/game';
 })
 export class GameComponent implements OnInit {
   pickCardAnimation = false;
+  currentCard: string | undefined = '';
   game!: Game;
 
   constructor() { }
@@ -25,6 +26,8 @@ export class GameComponent implements OnInit {
   }
 
   takeCard() {
+    this.currentCard = this.game.stack.pop();
+    console.log(this.currentCard);
     this.pickCardAnimation = true;
   }
 }
