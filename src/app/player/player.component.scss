@@ -7,13 +7,13 @@
     align-items: center;
     gap: 16px;
     background-color: white;
+    filter: brightness(0.5);
     border-radius: 75px 0 0 75px;
     transition: all 0.250s ease-in-out;
     cursor: pointer;
     
     &:hover {
         box-shadow: 0px 0px 10px 4px black;
-        width: 325px;
     }
 
     span {
@@ -29,4 +29,9 @@
         border-radius: 100%;
         border: 2px solid #DF0000;
     }
+}
+
+.player-active {
+    width: 350px;
+    filter: brightness(1) !important;
 }
