@@ -54,3 +54,16 @@
     position: absolute;
     right: 0;
 }
+
+.btn-add {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    background-color: white;
+    color: red;
+    border-radius: 100% !important;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+}
