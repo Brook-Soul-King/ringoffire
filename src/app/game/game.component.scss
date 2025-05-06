@@ -71,6 +71,7 @@
 .pin-bottom {
     position: absolute;
     bottom: 25px;
-    left: 100px;
-    right: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 850px;
 }

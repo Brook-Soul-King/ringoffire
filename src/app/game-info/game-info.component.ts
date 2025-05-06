@@ -28,9 +28,9 @@ export class GameInfoComponent implements OnInit, OnChanges {
 
   title = '';
   description = '';
+  // cardVisible: boolean = false;
 
-
-  @Input() card!: string | undefined;
+  @Input() card: string | undefined;
 
   constructor() { }
 
@@ -38,7 +38,12 @@ export class GameInfoComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(): void {
-    console.log('CurrentCard: ', this.card);
-
+    if (this.card) {
+      console.log('Current Card is: ', this.card);
+      let cardNumber = +this.card.split('_')[1];
+      this.title = this.cardAction[cardNumber - 1].title;
+      this.description = this.cardAction[cardNumber - 1].description;
+      // this.cardVisible = true;
+    }
   }
 }
