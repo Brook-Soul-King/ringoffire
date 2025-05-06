@@ -18,7 +18,8 @@ export class DialogAddPlayerComponent implements OnInit {
   name: string = '';
 
   constructor(
-    @Inject(MatDialogRef) public dialogRef: MatDialogRef<DialogAddPlayerComponent>
+    public dialogRef: MatDialogRef<DialogAddPlayerComponent>
+    // @Inject(MatDialogRef) public dialogRef: MatDialogRef<DialogAddPlayerComponent>
   ) {}
 
   ngOnInit(): void {
@@ -26,6 +27,6 @@ export class DialogAddPlayerComponent implements OnInit {
   }
 
   onNoClick(): void {
-    this.dialogRef.close(); // Dialog einfach schließen, ohne Rückgabe
+    this.dialogRef.close();
   }
 }
