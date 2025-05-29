@@ -11,19 +11,19 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class GameInfoComponent implements OnInit, OnChanges {
   cardAction = [
-    { title: 'Waterfall', description: 'Everyone has to start drinking at the same time. As soon as player 1 stops drinking, player 2 may stop drinking. Player 3 may stop as soon as player 2 stops drinking, and so on.' },
-    { title: 'You', description: 'You decide who drinks' },
-    { title: 'Me', description: 'Congrats! Drink a shot!' },
-    { title: 'Category', description: 'Come up with a category (e.g. Colors). Each player must enumerate one item from the category.' },
-    { title: 'Bust a jive', description: 'Player 1 makes a dance move. Player 2 repeats the dance move and adds a second one. ' },
-    { title: 'Chicks', description: 'All girls drink.' },
-    { title: 'Heaven', description: 'Put your hands up! The last player drinks!' },
-    { title: 'Mate', description: 'Pick a mate. Your mate must always drink when you drink and the other way around.' },
-    { title: 'Thumbmaster', description: '' },
-    { title: 'Men', description: 'All men drink.' },
-    { title: 'Quizmaster', description: '' },
-    { title: 'Never have i ever...', description: 'Say something you nnever did. Everyone who did it has to drink.' },
-    { title: 'Rule', description: 'Make a rule. Everyone needs to drink when he breaks the rule.' },
+    { title: 'Waterfall', description: 'Alle müssen gleichzeitig mit dem Trinken beginnen. Sobald Spieler 1 aufhört zu trinken, darf auch Spieler 2 aufhören. Spieler 3 darf aufhören, sobald Spieler 2 aufhört zu trinken, und so weiter.' },
+    { title: 'YOU', description: 'Du entscheidest wer trinkt' },
+    { title: 'ME', description: 'Glückwunsch! TRINK!' },
+    { title: 'Quizmaster', description: 'Stelle eine Wissensfrage an einen der Mitspieler, wenn er sie richtig beantwortet, musst du trinken. Beantwortet er/sie die Frage falsch, so muss er/sie trinken.' },
+    { title: 'Rollenwechsel', description: 'Der Spieler, der die Karte zieht, darf zwei Mitspieler bestimmen, die für 3 Runden ihre Namen tauschen müssen. Jeder, der den falschen Namen benutzt, trinkt.' },
+    { title: 'Eiszeit', description: 'Die Person darf eine „Eiszeit“ ausrufen (z. B. 1 Minute lang). In dieser Zeit darf niemand lachen. Wer lacht, trinkt.' },
+    { title: 'Unwort', description: 'Der Spieler bestimmt ein Wort. Wer es sagt, muss trinken – gilt bis zur nächsten Karte.' },
+    { title: 'Teammate', description: 'Wähle einen Teammate, jedes mal wenn einer von euch trinken muss, trinkt ihr beide.' },
+    { title: 'Silent Mode', description: 'Der Spieler darf für die nächsten 2 Runden nichts sagen. Wer ihn anspricht oder er selbst etwas sagt, trinkt.' },
+    { title: 'Trinkt ihr Narren!', description: 'Alle Mitspieler, müssen etwas trinken.' },
+    { title: 'Oberthema', description: 'Überlege dir eine Kategorie (z.B. Automarken). Jeder Spieler muss etwas aus der Kategorie aufzählen. Derjenige, der zuerst etwas doppelt sagt oder nichts mehr weiß, muss trinken.' },
+    { title: 'Ich hab noch nie...', description: 'Sage etwas, was du noch nie gemacht hast. Jeder der das schon einmal gemacht hat, muss trinken.' },
+    { title: 'Ma Lord', description: 'Wer auf die Fragen den Königs antwortet, muss trinken.' },
   ];
 
   title = '';
